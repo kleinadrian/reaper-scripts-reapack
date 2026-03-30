@@ -16,7 +16,6 @@ Then import this URL:
 
 - Automation
 - Editing
-- Automation
 - Organization
 - Recording
 - Workflow
