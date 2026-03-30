@@ -1,23 +1,25 @@
-# ReaPack Repository Template
+# Adrian Klein REAPER Scripts
 
-A template for GitHub-hosted ReaPack repositories with automated
-[reapack-index](https://github.com/cfillion/reapack-index)
-running from GitHub Actions.
+A ReaPack repository for personal REAPER scripts used in daily work for sound design, editing, recording, project formatting, and workflow.
 
-Replace the name of the repository in [index.xml](/index.xml) when using this template.
-This will be the name shown in ReaPack.
+## Install in REAPER
 
-```xml
-<index version="1" name="Name of your repository here">
-```
+In REAPER, go to:
 
-Replace the contents of this file ([README.md](/README.md)).
-This will be the text shown when using ReaPack's "About this repository" feature.
+Extensions → ReaPack → Import repositories
 
-reapack-index looks for package files in subfolders.
-The folder tree represents the package categories shown in ReaPack.
+Then import this URL:
 
-Each package file is expected to begin with a metadata header.
-See [Packaging Documentation](https://github.com/cfillion/reapack-index/wiki/Packaging-Documentation) on reapack-index's wiki.
+`https://raw.githubusercontent.com/kleinadrian/reaper-scripts-reapack/master/index.xml`
 
-The URL to import in ReaPack is [https://github.com/`<your username>`/`<repository name>`/raw/master/index.xml](https://github.com/cfillion/reapack-repository-template/raw/master/index.xml).
+## Categories
+
+- Editing
+- Workflow
+- Automation
+- Recording
+- Project Formatting
+
+## Notes
+
+These scripts are built from real-world use and will continue to evolve over time.
