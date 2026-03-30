@@ -1,10 +1,17 @@
+-- @description Alternate Pan Selected Tracks Left-Right by Amount
+-- @version 1.2
+-- @author Adrian Klein
+-- @about
+--   Alternates selected tracks left and right by a user-defined pan amount.
+--   Prompts for a value (0–100) and remembers the last used amount.
+
 --[[
- * ReaScript Name: Alternate Pan Left-Right for Selected Tracks by Amount
+ * ReaScript Name: Alternate Pan Selected Tracks Left-Right by Amount
  * Author: Adrian Klein
- * Version: 1.1
+ * Version: 1.2
  * Description:
- *   Prompts for a pan amount (0-100) and remembers the last value
- *   Alternates selected tracks left and right by the specified amount
+ *   Alternates selected tracks left and right by a user-defined pan amount.
+ *   Prompts for a value (0–100) and remembers the last used amount.
 ]]
 
 local EXT_SECTION = "AK_AlternatePan"

@@ -1,13 +1,20 @@
+-- @description Align Items to Chosen Project Marker
+-- @version 1.1
+-- @author Adrian Klein
+-- @about
+--   Aligns selected items to a chosen project marker.
+--   Uses take marker, snap offset, or item start as alignment reference.
+
 --[[
- * ReaScript Name: Align Selected Items to Chosen Project Marker
+ * ReaScript Name: Align Items to Chosen Project Marker
  * Author: Adrian Klein
- * Version: 1.0
+ * Version: 1.1
  * Description:
- *   Aligns selected items to a chosen project marker
- *   Filters marker list (excludes negative timecode and markers starting with =, #, &, $)
- *   Remembers last selected marker per project (preselect only)
- *   Alignment priority: take marker, snap offset, item start
- *   Uses absolute alignment and de-stacks items only on collision
+ *   Aligns selected items to a chosen project marker.
+ *   Filters marker list (excludes negative timecode and markers starting with =, #, &, $).
+ *   Remembers last selected marker per project (preselect only).
+ *   Alignment priority: take marker, snap offset, item start.
+ *   Uses absolute alignment and de-stacks items only on collision.
 ]]
 
 --------------------------------------------------

@@ -1,10 +1,17 @@
+-- @description Move Selected Items to Selected Track
+-- @version 1.1
+-- @author Adrian Klein
+-- @about
+--   Moves selected items to the selected destination track.
+--   Preserves exact item positions.
+
 --[[
  * ReaScript Name: Move Selected Items to Selected Track
  * Author: Adrian Klein
- * Version: 1.0
+ * Version: 1.1
  * Description:
- *   Moves selected items from any track to the selected destination track
- *   Preserves exact item positions
+ *   Moves selected items to the selected destination track.
+ *   Preserves exact item positions.
 ]]
 
 local function get_destination_track()

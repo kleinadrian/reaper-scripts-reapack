@@ -1,12 +1,19 @@
+-- @description Duplicate Tracks Without Items or Envelopes
+-- @version 1.4
+-- @author Adrian Klein
+-- @about
+--   Duplicates selected tracks while preserving FX, routing, and settings.
+--   Removes all items and automation envelopes and resets automation mode.
+
 --[[
  * ReaScript Name: Duplicate Tracks Without Items or Envelopes
  * Author: Adrian Klein
- * Version: 1.3
+ * Version: 1.4
  * Description:
- *   Duplicates selected tracks while preserving FX, routing, and settings
- *   Removes all media items from duplicates
- *   Removes all automation envelopes via state chunk
- *   Resets automation mode to Trim/Read
+ *   Duplicates selected tracks while preserving FX, routing, and settings.
+ *   Removes all media items from duplicates.
+ *   Removes all automation envelopes via state chunk.
+ *   Resets automation mode to Trim/Read.
 ]]
 
 local function delete_all_items_on_track(track)

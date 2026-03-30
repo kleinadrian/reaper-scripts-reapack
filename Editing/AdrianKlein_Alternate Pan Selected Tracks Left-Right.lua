@@ -1,9 +1,15 @@
+-- @description Alternate Pan Selected Tracks Left-Right
+-- @version 1.1
+-- @author Adrian Klein
+-- @about
+--   Alternates selected tracks between hard left and hard right pan positions.
+
 --[[
- * ReaScript Name: Alternate Pan Left-Right for Selected Tracks
+ * ReaScript Name: Alternate Pan Selected Tracks Left-Right
  * Author: Adrian Klein
- * Version: 1.0
+ * Version: 1.1
  * Description:
- *   Alternates selected tracks hard left and right
+ *   Alternates selected tracks between hard left and hard right pan positions.
 ]]
 
 function main()

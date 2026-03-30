@@ -1,17 +1,19 @@
--- @description Split selected items at loop points
--- @version 1.1
+-- @description Split Items at Loop Points
+-- @version 1.2
 -- @author Adrian Klein
 -- @about
---   Splits selected items at loop start and end points.
+--   Splits selected unlocked items at the current loop start and loop end.
 --   Selects only the resulting pieces inside the loop range.
+--   Does nothing if there is no loop selection.
 
 --[[
- * ReaScript Name: Split Selected Items at Loop Points and Select Inside Pieces
+ * ReaScript Name: Split Items at Loop Points
  * Author: Adrian Klein
- * Version: 1.1
+ * Version: 1.2
  * Description:
- *   Splits selected items at loop start and end points
- *   Selects only the resulting pieces inside the loop range
+ *   Splits selected unlocked items at the current loop start and loop end.
+ *   Selects only the resulting pieces inside the loop range.
+ *   Does nothing if there is no loop selection.
 ]]
 
 local function is_item_locked(item)
