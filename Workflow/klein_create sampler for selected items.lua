@@ -6,14 +6,13 @@
 --   Sets up track, routing, and monitoring for immediate use.
 
 --[[
- * ReaScript Name: Create Sampler for Selected Items
- * Author: Adrian Klein
- * Version: 1.0
  * Description:
  *   Creates a new track below the selected track or at the end if no track is selected.
  *   Names the track "efx sampler" and inserts ReaSamplOmatic5000.
- *   Selects the new track, enables record arm and monitoring, sets MIDI input to all channels.
+ *   Selects the new track, enables record arm and monitoring, and sets MIDI input to all channels.
  *   Opens the ReaSamplOmatic5000 interface.
+
+ * Notes:
  *   Requires manual use of "Import item from arrange" in the sampler to load the selected item.
 ]]
 

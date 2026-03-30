@@ -1,4 +1,4 @@
--- @description Split Items at Loop Points
+-- @description Split Selected Items at Loop Points
 -- @version 1.2
 -- @author Adrian Klein
 -- @about
@@ -7,9 +7,6 @@
 --   Does nothing if there is no loop selection.
 
 --[[
- * ReaScript Name: Split Items at Loop Points
- * Author: Adrian Klein
- * Version: 1.2
  * Description:
  *   Splits selected unlocked items at the current loop start and loop end.
  *   Selects only the resulting pieces inside the loop range.

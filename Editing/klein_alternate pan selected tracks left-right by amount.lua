@@ -6,9 +6,6 @@
 --   Prompts for a value (0–100) and remembers the last used amount.
 
 --[[
- * ReaScript Name: Alternate Pan Selected Tracks Left-Right by Amount
- * Author: Adrian Klein
- * Version: 1.2
  * Description:
  *   Alternates selected tracks left and right by a user-defined pan amount.
  *   Prompts for a value (0–100) and remembers the last used amount.

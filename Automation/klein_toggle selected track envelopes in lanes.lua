@@ -3,16 +3,15 @@
 -- @author Adrian Klein
 -- @about
 --   Toggles visibility of envelopes in lanes for selected tracks.
---   Preserves and restores automation mode when hiding/showing envelopes.
+--   Preserves and restores automation mode when hiding or showing envelopes.
 
 --[[
- * ReaScript Name: Toggle Selected Track Envelopes in Lanes
- * Author: Adrian Klein
- * Version: 1.6
  * Description:
  *   Toggles visibility of envelopes in lanes for selected tracks.
  *   When hiding envelopes, saves automation mode and sets tracks to Read.
  *   When showing envelopes, restores automation mode if still in Read.
+
+ * Notes:
  *   Falls back to action 40292 if no envelopes are present.
 ]]
 

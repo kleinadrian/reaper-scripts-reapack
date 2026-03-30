@@ -6,33 +6,31 @@
 --   Places videos using markers or sequentially and manages video tracks automatically.
 
 --[[
- * ReaScript Name: Import Video and Match Project FPS
- * Author: Adrian Klein
- * Version: 2.5
  * Description:
  *   Imports multiple video files with automatic frame rate detection and smart placement.
  *   Ensures consistent FPS, manages video tracks, and preserves project and UI state.
- *
- * Video Handling:
+
+ * Notes:
+ *   Video Handling:
  *   - Multi-select import via JS_Dialog_BrowseForOpenFiles.
  *   - Detects frame rate using ffprobe (no hardcoded paths).
  *   - Aborts or prompts if selected videos have mismatched frame rates.
  *   - Skips files already present in the project.
- *
- * Placement:
+
+ *   Placement:
  *   - Uses "=START" marker, then numbered video markers in order.
  *   - Supports naming: "video", "video 3", "video3", "video 03".
  *   - Trims previous video if next marker overlaps.
  *   - Falls back to end-to-end chaining when markers run out.
- *
- * Track Management:
+
+ *   Track Management:
  *   - Uses selected video track if available (clears existing items).
  *   - Creates "video" track at top if none exist.
  *   - Reuses empty or non-overlapping video tracks when possible.
  *   - Creates additional tracks ("video 2", "video 3", etc.) as needed.
  *   - Tracks are TCP-only, hidden from MCP, pinned, colored, and utility-layout assigned.
- *
- * Behavior:
+
+ *   Behavior:
  *   - Sets project FPS using SWS config vars (projfrbase / projfrdrop).
  *   - Disables looping on imported items.
  *   - Locks item positions after processing.

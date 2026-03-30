@@ -1,17 +1,16 @@
 -- @description Toggle Record Arm and Monitoring for Instrument Tracks
--- @version 1.0
+-- @version 1.1
 -- @author Adrian Klein
 -- @about
 --   Toggles record arm on selected tracks.
 --   Enables monitoring only for instrument-related tracks and skips utility tracks.
 
 --[[
- * ReaScript Name: Toggle Record Arm and Monitoring for Instrument Tracks
- * Author: Adrian Klein
- * Version: 1.0
  * Description:
  *   Toggles record arm on selected tracks.
  *   Enables monitoring only for instrument-related tracks.
+
+ * Notes:
  *   Ignores tracks with names containing notes, marker, print, bus, send, master, or video.
  *   Ignores folder parent tracks and tracks without record input.
 ]]

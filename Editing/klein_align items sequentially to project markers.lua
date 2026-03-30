@@ -6,14 +6,13 @@
 --   Uses snap offset or item start as alignment reference.
 
 --[[
- * ReaScript Name: Align Items Sequentially to Project Markers
- * Author: Adrian Klein
- * Version: 1.1
  * Description:
  *   Aligns selected items sequentially to project markers starting from the edit cursor.
  *   Uses only markers (regions are ignored).
  *   Uses snap offset as alignment point (falls back to item start if zero).
- *   Preserves item length, adjusts position only.
+ *   Preserves item length and adjusts position only.
+
+ * Notes:
  *   Stops when no more markers are available.
 ]]
 

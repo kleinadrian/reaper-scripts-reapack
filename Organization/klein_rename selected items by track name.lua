@@ -6,9 +6,6 @@
 --   Supports take name appending and smart numbering.
 
 --[[
- * ReaScript Name: Rename Selected Items by Track Name
- * Author: Adrian Klein
- * Version: 1.0
  * Description:
  *   Renames selected items based on their track name.
  *   Uses active take names (what REAPER displays on items).

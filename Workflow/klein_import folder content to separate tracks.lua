@@ -6,21 +6,19 @@
 --   Sets tempo, updates reference region, and prepares the project automatically.
 
 --[[
- * ReaScript Name: Import Folder Content to Separate Tracks
- * Author: Adrian Klein
- * Version: 3.1
  * Description:
  *   Imports all audio files from a selected folder to separate tracks at marker "=START".
  *   Renames tracks from filenames and sets project tempo from MIDI map or folder name.
  *   Updates or creates region "reference print" to match imported content.
  *   Sets loop range, frames arrange view, limits project length, and selects imported tracks.
- *
- * Folder Format:
+
+ * Notes:
+ *   Folder format:
  *   - "Song Title 130bpm"
  *   - "Song Title 130bpm 4/4"
  *   - MIDI tempo map in folder overrides BPM/time signature.
- *
- * Behavior:
+
+ *   Behavior:
  *   1. Finds marker "=START" and imports all audio files at that position.
  *   2. Renames tracks based on filenames.
  *   3. Applies MIDI tempo map if present, otherwise uses folder BPM/time signature.

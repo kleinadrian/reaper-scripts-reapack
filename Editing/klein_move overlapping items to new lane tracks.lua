@@ -1,18 +1,17 @@
 -- @description Move Overlapping Items to New Lane Tracks
--- @version 1.1
+-- @version 1.0
 -- @author Adrian Klein
 -- @about
 --   Moves overlapping selected items to new lane tracks per source track.
 --   Preserves track names and colors and minimizes lane creation.
 
 --[[
- * ReaScript Name: Move Overlapping Items to New Lane Tracks
- * Author: Adrian Klein
- * Version: 1.1
  * Description:
  *   Moves overlapping selected items to new lane tracks per source track.
  *   Uses deterministic sorting with minimal lane creation.
  *   Preserves original track names and colors.
+
+ * Notes:
  *   Avoids breaking folder closing tracks when possible.
 ]]
 
