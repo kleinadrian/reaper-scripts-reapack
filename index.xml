@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Adrian Klein REAPER Scripts" commit="d838e54ec4ef9704ac365e36fb64f4fbf01985ef">
+<index version="1" name="Adrian Klein Scripts" commit="d838e54ec4ef9704ac365e36fb64f4fbf01985ef">
   <category name="Automation">
     <reapack name="AdrianKlein_Toggle Selected Track Envelopes in Lanes.lua" type="script" desc="Toggle Selected Track Envelopes in Lanes">
       <metadata>
