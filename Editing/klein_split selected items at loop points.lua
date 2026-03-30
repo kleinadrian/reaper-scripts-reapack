@@ -1,3 +1,10 @@
+-- @description Split selected items at loop points
+-- @version 1.1
+-- @author Adrian Klein
+-- @about
+--   Splits selected items at loop start and end points.
+--   Selects only the resulting pieces inside the loop range.
+
 --[[
  * ReaScript Name: Split Selected Items at Loop Points and Select Inside Pieces
  * Author: Adrian Klein
