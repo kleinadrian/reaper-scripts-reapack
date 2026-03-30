@@ -1,54 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Adrian Klein REAPER Scripts" commit="58a3e39ba95bd0f35846aa1f39aa4cb2574295e1">
-  <category name="Example">
-    <reapack name="cfillion_Hello world.lua" type="script" desc="Hello world">
+<index version="1" name="Adrian Klein REAPER Scripts" commit="91eed7b4717615ca2dd8f98c774284c6f38a4285">
+  <category name="Editing">
+    <reapack name="klein_align selected items sequential to project markers.lua" type="script" desc="Align Selected Items Sequentially to Markers (Cursor Start)">
+      <version name="1.0" author="Adrian Klein" time="2026-03-30T10:17:41Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/096036603d7a82d68c734d5a114233f949ccc45a/Editing/klein_align%20selected%20items%20sequential%20to%20project%20markers.lua</source>
+      </version>
+    </reapack>
+    <reapack name="klein_align selected items to chosen project marker.lua" type="script" desc="Align Selected Items to Chosen Project Marker">
+      <version name="1.0" author="Adrian Klein" time="2026-03-30T10:17:41Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/096036603d7a82d68c734d5a114233f949ccc45a/Editing/klein_align%20selected%20items%20to%20chosen%20project%20marker.lua</source>
+      </version>
+    </reapack>
+    <reapack name="klein_duplicate tracks without items or envelopes.lua" type="script" desc="Duplicate Tracks Without Items or Envelopes">
+      <version name="1.3" author="Adrian Klein" time="2026-03-30T10:17:41Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/096036603d7a82d68c734d5a114233f949ccc45a/Editing/klein_duplicate%20tracks%20without%20items%20or%20envelopes.lua</source>
+      </version>
+    </reapack>
+    <reapack name="klein_move overlapping selected items to new lane tracks.lua" type="script" desc="Move Overlapping Selected Items to New Lane Tracks">
+      <version name="1.0" author="Adrian Klein" time="2026-03-30T10:17:41Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/096036603d7a82d68c734d5a114233f949ccc45a/Editing/klein_move%20overlapping%20selected%20items%20to%20new%20lane%20tracks.lua</source>
+      </version>
+    </reapack>
+    <reapack name="klein_moves selected items to the selected track.lua" type="script" desc="Move Selected Items to Selected Track">
+      <version name="1.0" author="Adrian Klein" time="2026-03-30T10:17:41Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/096036603d7a82d68c734d5a114233f949ccc45a/Editing/klein_moves%20selected%20items%20to%20the%20selected%20track.lua</source>
+      </version>
+    </reapack>
+    <reapack name="klein_pan selected tracks from left to right by amount.lua" type="script" desc="Alternate Pan Left-Right for Selected Tracks by Amount">
+      <version name="1.1" author="Adrian Klein" time="2026-03-30T10:17:41Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/096036603d7a82d68c734d5a114233f949ccc45a/Editing/klein_pan%20selected%20tracks%20from%20left%20to%20right%20by%20amount.lua</source>
+      </version>
+    </reapack>
+    <reapack name="klein_pan selected tracks from left to right.lua" type="script" desc="Alternate Pan Left-Right for Selected Tracks">
+      <version name="1.0" author="Adrian Klein" time="2026-03-30T10:17:41Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/096036603d7a82d68c734d5a114233f949ccc45a/Editing/klein_pan%20selected%20tracks%20from%20left%20to%20right.lua</source>
+      </version>
+    </reapack>
+    <reapack name="klein_split selected items at loop points.lua" type="script" desc="Split selected items at loop points">
       <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 This is an example of a package file. It installs itself as a ReaScript that does nothing but show "Hello World!" in REAPER's scripting console.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 Packages may also include additional files specified using the @provides tag.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 This text is the documentation shown when using ReaPack's "About this package" feature. {\field{\*\fldinst{HYPERLINK "https://commonmark.org/"}}{\fldrslt{\ul
-Markdown
-}}}
- {\i formatting} is supported.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Splits selected items at loop start and end points. Selects only the resulting pieces inside the loop range.\par}
 }
 ]]></description>
       </metadata>
-      <version name="1.0" author="cfillion" time="2021-01-04T23:30:32Z">
-        <source main="main">https://github.com/cfillion/reapack-repository-template/raw/58a3e39ba95bd0f35846aa1f39aa4cb2574295e1/Example/cfillion_Hello%20world.lua</source>
+      <version name="1.1" author="Adrian Klein" time="2026-03-30T10:17:41Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/096036603d7a82d68c734d5a114233f949ccc45a/Editing/klein_split%20selected%20items%20at%20loop%20points.lua</source>
       </version>
     </reapack>
   </category>
   <metadata>
-    <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+    <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 ReaPack Repository Template\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 A template for GitHub-hosted ReaPack repositories with automated {\field{\*\fldinst{HYPERLINK "https://github.com/cfillion/reapack-index"}}{\fldrslt{\ul
-reapack-index
-}}}
- running from GitHub Actions.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 Replace the name of the repository in {\field{\*\fldinst{HYPERLINK "/index.xml"}}{\fldrslt{\ul
-index.xml
-}}}
- when using this template. This will be the name shown in ReaPack.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \f1 <index version="1" name="Name of your repository here">\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 Replace the contents of this file ({\field{\*\fldinst{HYPERLINK "/README.md"}}{\fldrslt{\ul
-README.md
-}}}
-). This will be the text shown when using ReaPack's "About this repository" feature.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 reapack-index looks for package files in subfolders. The folder tree represents the package categories shown in ReaPack.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 Each package file is expected to begin with a metadata header. See {\field{\*\fldinst{HYPERLINK "https://github.com/cfillion/reapack-index/wiki/Packaging-Documentation"}}{\fldrslt{\ul
-Packaging Documentation
-}}}
- on reapack-index's wiki.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 The URL to import in ReaPack is {\field{\*\fldinst{HYPERLINK "https://github.com/cfillion/reapack-repository-template/raw/master/index.xml"}}{\fldrslt{\ul
-https://github.com/{\f1 <your username>}/{\f1 <repository name>}/raw/master/index.xml
-}}}
-.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 Adrian Klein REAPER Scripts\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 A ReaPack repository for personal REAPER scripts used in daily work for sound design, editing, recording, project formatting, and workflow.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Install in REAPER\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 In REAPER, go to:\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Extensions \u8594 ? ReaPack \u8594 ? Import repositories\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Then import this URL:\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\f1 https://raw.githubusercontent.com/kleinadrian/reaper-scripts-reapack/master/index.xml}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Categories\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Editing\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Workflow\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Automation\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Recording\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Project Formatting\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Notes\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 These scripts are built from real-world use and will continue to evolve over time.\par}
 }
 ]]></description>
   </metadata>
