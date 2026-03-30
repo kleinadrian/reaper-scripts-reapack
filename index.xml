@@ -1,53 +1,320 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Adrian Klein REAPER Scripts" commit="91eed7b4717615ca2dd8f98c774284c6f38a4285">
-  <category name="Editing">
-    <reapack name="klein_align selected items sequential to project markers.lua" type="script" desc="Align Selected Items Sequentially to Markers (Cursor Start)">
-      <version name="1.0" author="Adrian Klein" time="2026-03-30T10:17:41Z">
-        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/096036603d7a82d68c734d5a114233f949ccc45a/Editing/klein_align%20selected%20items%20sequential%20to%20project%20markers.lua</source>
-      </version>
-    </reapack>
-    <reapack name="klein_align selected items to chosen project marker.lua" type="script" desc="Align Selected Items to Chosen Project Marker">
-      <version name="1.0" author="Adrian Klein" time="2026-03-30T10:17:41Z">
-        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/096036603d7a82d68c734d5a114233f949ccc45a/Editing/klein_align%20selected%20items%20to%20chosen%20project%20marker.lua</source>
-      </version>
-    </reapack>
-    <reapack name="klein_duplicate tracks without items or envelopes.lua" type="script" desc="Duplicate Tracks Without Items or Envelopes">
-      <version name="1.3" author="Adrian Klein" time="2026-03-30T10:17:41Z">
-        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/096036603d7a82d68c734d5a114233f949ccc45a/Editing/klein_duplicate%20tracks%20without%20items%20or%20envelopes.lua</source>
-      </version>
-    </reapack>
-    <reapack name="klein_move overlapping selected items to new lane tracks.lua" type="script" desc="Move Overlapping Selected Items to New Lane Tracks">
-      <version name="1.0" author="Adrian Klein" time="2026-03-30T10:17:41Z">
-        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/096036603d7a82d68c734d5a114233f949ccc45a/Editing/klein_move%20overlapping%20selected%20items%20to%20new%20lane%20tracks.lua</source>
-      </version>
-    </reapack>
-    <reapack name="klein_moves selected items to the selected track.lua" type="script" desc="Move Selected Items to Selected Track">
-      <version name="1.0" author="Adrian Klein" time="2026-03-30T10:17:41Z">
-        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/096036603d7a82d68c734d5a114233f949ccc45a/Editing/klein_moves%20selected%20items%20to%20the%20selected%20track.lua</source>
-      </version>
-    </reapack>
-    <reapack name="klein_pan selected tracks from left to right by amount.lua" type="script" desc="Alternate Pan Left-Right for Selected Tracks by Amount">
-      <version name="1.1" author="Adrian Klein" time="2026-03-30T10:17:41Z">
-        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/096036603d7a82d68c734d5a114233f949ccc45a/Editing/klein_pan%20selected%20tracks%20from%20left%20to%20right%20by%20amount.lua</source>
-      </version>
-    </reapack>
-    <reapack name="klein_pan selected tracks from left to right.lua" type="script" desc="Alternate Pan Left-Right for Selected Tracks">
-      <version name="1.0" author="Adrian Klein" time="2026-03-30T10:17:41Z">
-        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/096036603d7a82d68c734d5a114233f949ccc45a/Editing/klein_pan%20selected%20tracks%20from%20left%20to%20right.lua</source>
-      </version>
-    </reapack>
-    <reapack name="klein_split selected items at loop points.lua" type="script" desc="Split selected items at loop points">
+<index version="1" name="Adrian Klein Scripts" commit="d838e54ec4ef9704ac365e36fb64f4fbf01985ef">
+  <category name="Automation">
+    <reapack name="AdrianKlein_Toggle Selected Track Envelopes in Lanes.lua" type="script" desc="Toggle Selected Track Envelopes in Lanes">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 Splits selected items at loop start and end points. Selects only the resulting pieces inside the loop range.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Toggles visibility of envelopes in lanes for selected tracks. Preserves and restores automation mode when hiding/showing envelopes.\par}
 }
 ]]></description>
       </metadata>
-      <version name="1.1" author="Adrian Klein" time="2026-03-30T10:17:41Z">
-        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/096036603d7a82d68c734d5a114233f949ccc45a/Editing/klein_split%20selected%20items%20at%20loop%20points.lua</source>
+      <version name="1.6" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Automation/AdrianKlein_Toggle%20Selected%20Track%20Envelopes%20in%20Lanes.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Editing">
+    <reapack name="AdrianKlein_Align Items Sequentially to Project Markers.lua" type="script" desc="Align Items Sequentially to Project Markers">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Aligns selected items sequentially to project markers starting from the edit cursor. Uses snap offset or item start as alignment reference.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.1" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Editing/AdrianKlein_Align%20Items%20Sequentially%20to%20Project%20Markers.lua</source>
+      </version>
+    </reapack>
+    <reapack name="AdrianKlein_Align Items to Chosen Project Marker.lua" type="script" desc="Align Items to Chosen Project Marker">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Aligns selected items to a chosen project marker. Uses take marker, snap offset, or item start as alignment reference.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.1" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Editing/AdrianKlein_Align%20Items%20to%20Chosen%20Project%20Marker.lua</source>
+      </version>
+    </reapack>
+    <reapack name="AdrianKlein_Alternate Pan Selected Tracks Left-Right by Amount.lua" type="script" desc="Alternate Pan Selected Tracks Left-Right by Amount">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Alternates selected tracks left and right by a user-defined pan amount. Prompts for a value (0\u8211-100) and remembers the last used amount.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.2" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Editing/AdrianKlein_Alternate%20Pan%20Selected%20Tracks%20Left-Right%20by%20Amount.lua</source>
+      </version>
+    </reapack>
+    <reapack name="AdrianKlein_Alternate Pan Selected Tracks Left-Right.lua" type="script" desc="Alternate Pan Selected Tracks Left-Right">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Alternates selected tracks between hard left and hard right pan positions.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.1" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Editing/AdrianKlein_Alternate%20Pan%20Selected%20Tracks%20Left-Right.lua</source>
+      </version>
+    </reapack>
+    <reapack name="AdrianKlein_Duplicate Tracks Without Items or Envelopes.lua" type="script" desc="Duplicate Tracks Without Items or Envelopes">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Duplicates selected tracks while preserving FX, routing, and settings. Removes all items and automation envelopes and resets automation mode.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.4" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Editing/AdrianKlein_Duplicate%20Tracks%20Without%20Items%20or%20Envelopes.lua</source>
+      </version>
+    </reapack>
+    <reapack name="AdrianKlein_Move Overlapping Items to New Lane Tracks.lua" type="script" desc="Move Overlapping Items to New Lane Tracks">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Moves overlapping selected items to new lane tracks per source track. Preserves track names and colors and minimizes lane creation.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.1" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Editing/AdrianKlein_Move%20Overlapping%20Items%20to%20New%20Lane%20Tracks.lua</source>
+      </version>
+    </reapack>
+    <reapack name="AdrianKlein_Move Selected Items to Selected Track.lua.lua" type="script" desc="Move Selected Items to Selected Track">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Moves selected items to the selected destination track. Preserves exact item positions.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.1" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Editing/AdrianKlein_Move%20Selected%20Items%20to%20Selected%20Track.lua.lua</source>
+      </version>
+    </reapack>
+    <reapack name="AdrianKlein_Split Items at Loop Points.lua" type="script" desc="Split Items at Loop Points">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Splits selected unlocked items at the current loop start and loop end. Selects only the resulting pieces inside the loop range. Does nothing if there is no loop selection.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.2" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Editing/AdrianKlein_Split%20Items%20at%20Loop%20Points.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Organization">
+    <reapack name="AdrianKlein_Append Incremented Numbers to Selected Tracks.lua" type="script" desc="Append Incremented Numbers to Selected Tracks">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Appends sequential numbers to the end of selected track names.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Organization/AdrianKlein_Append%20Incremented%20Numbers%20to%20Selected%20Tracks.lua</source>
+      </version>
+    </reapack>
+    <reapack name="AdrianKlein_Format Parent and Child Track Names.lua" type="script" desc="Format Parent and Child Track Names">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Capitalizes parent track names and converts child track names to lowercase.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Organization/AdrianKlein_Format%20Parent%20and%20Child%20Track%20Names.lua</source>
+      </version>
+    </reapack>
+    <reapack name="AdrianKlein_Format Selected Parent and Child Track Names.lua" type="script" desc="Format Selected Parent and Child Track Names">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Capitalizes selected parent track names and converts selected child track names to lowercase.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Organization/AdrianKlein_Format%20Selected%20Parent%20and%20Child%20Track%20Names.lua</source>
+      </version>
+    </reapack>
+    <reapack name="AdrianKlein_Group Selected Tracks by Categories.lua" type="script" desc="Group Selected Tracks by Categories">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Groups selected tracks into category folders when multiple matches are found. Leaves single tracks ungrouped and applies consistent naming.\par}
+}
+]]></description>
+      </metadata>
+      <version name="2.0" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Organization/AdrianKlein_Group%20Selected%20Tracks%20by%20Categories.lua</source>
+      </version>
+    </reapack>
+    <reapack name="AdrianKlein_Rename Selected Items by Track Name.lua" type="script" desc="Rename Selected Items by Track Name">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Renames selected items based on their track name. Supports take name appending and smart numbering.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Organization/AdrianKlein_Rename%20Selected%20Items%20by%20Track%20Name.lua</source>
+      </version>
+    </reapack>
+    <reapack name="AdrianKlein_Rename Selected Tracks by Category.lua" type="script" desc="Rename Selected Tracks by Category">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Renames selected tracks using a category name. Supports optional sequential numbering.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Organization/AdrianKlein_Rename%20Selected%20Tracks%20by%20Category.lua</source>
+      </version>
+    </reapack>
+    <reapack name="AdrianKlein_Rename Selected Tracks with Incremental Numbers.lua" type="script" desc="Rename Selected Tracks with Incremental Numbers">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Renames selected tracks sequentially using a user-defined base name.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Organization/AdrianKlein_Rename%20Selected%20Tracks%20with%20Incremental%20Numbers.lua</source>
+      </version>
+    </reapack>
+    <reapack name="AdrianKlein_Set Selected Tracks to Uppercase.lua" type="script" desc="Set Selected Tracks to Uppercase">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Converts selected track names to uppercase.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Organization/AdrianKlein_Set%20Selected%20Tracks%20to%20Uppercase.lua</source>
+      </version>
+    </reapack>
+    <reapack name="AdrianKlein_Sort Selected Tracks by Custom Name Categories.lua" type="script" desc="Sort Selected Tracks by Custom Name Categories">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Sorts selected tracks using custom name categories with priority-based matching. Applies consistent naming and orders tracks with minimal changes.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Organization/AdrianKlein_Sort%20Selected%20Tracks%20by%20Custom%20Name%20Categories.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Recording">
+    <reapack name="AdrianKlein_Toggle Record Arm and Monitoring for Instrument Tracks.lua" type="script" desc="Toggle Record Arm and Monitoring for Instrument Tracks">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Toggles record arm on selected tracks. Enables monitoring only for instrument-related tracks and skips utility tracks.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Recording/AdrianKlein_Toggle%20Record%20Arm%20and%20Monitoring%20for%20Instrument%20Tracks.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Workflow">
+    <reapack name="AdrianKlein_Create Sampler for Selected Items.lua" type="script" desc="Create Sampler for Selected Items">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Creates a sampler track with ReaSamplOmatic5000 from selected items. Sets up track, routing, and monitoring for immediate use.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Workflow/AdrianKlein_Create%20Sampler%20for%20Selected%20Items.lua</source>
+      </version>
+    </reapack>
+    <reapack name="AdrianKlein_Import Folder Content to Separate Tracks.lua" type="script" desc="Import Folder Content to Separate Tracks">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Imports audio files from a folder to separate tracks at the "=START" marker. Sets tempo, updates reference region, and prepares the project automatically.\par}
+}
+]]></description>
+      </metadata>
+      <version name="3.1" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Workflow/AdrianKlein_Import%20Folder%20Content%20to%20Separate%20Tracks.lua</source>
+      </version>
+    </reapack>
+    <reapack name="AdrianKlein_Import Video and Match Project FPS.lua" type="script" desc="Import Video and Match Project FPS">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Imports video files with automatic frame rate detection and project FPS matching. Places videos using markers or sequentially and manages video tracks automatically.\par}
+}
+]]></description>
+      </metadata>
+      <version name="2.5" author="Adrian Klein" time="2026-03-30T11:24:56Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/d838e54ec4ef9704ac365e36fb64f4fbf01985ef/Workflow/AdrianKlein_Import%20Video%20and%20Match%20Project%20FPS.lua</source>
       </version>
     </reapack>
   </category>
@@ -56,19 +323,19 @@
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 Adrian Klein REAPER Scripts\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 A ReaPack repository for personal REAPER scripts used in daily work for sound design, editing, recording, project formatting, and workflow.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 Adrian Klein Scripts\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 A ReaPack repository for personal scripts used in daily work for sound design, editing, recording, project formatting, and workflow.\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Install in REAPER\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 In REAPER, go to:\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Extensions \u8594 ? ReaPack \u8594 ? Import repositories\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Then import this URL:\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 {\f1 https://raw.githubusercontent.com/kleinadrian/reaper-scripts-reapack/master/index.xml}\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Categories\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Editing\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Workflow\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Automation\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Editing\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Organization\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Recording\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Project Formatting\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Workflow\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Notes\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 These scripts are built from real-world use and will continue to evolve over time.\par}
 }

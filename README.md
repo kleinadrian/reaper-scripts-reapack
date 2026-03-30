@@ -1,6 +1,6 @@
-# Adrian Klein REAPER Scripts
+# Adrian Klein Scripts
 
-A ReaPack repository for personal REAPER scripts used in daily work for sound design, editing, recording, project formatting, and workflow.
+A ReaPack repository for personal scripts used in daily work for sound design, editing, recording, project formatting, and workflow.
 
 ## Install in REAPER
 
@@ -14,11 +14,11 @@ Then import this URL:
 
 ## Categories
 
-- Editing
-- Workflow
 - Automation
+- Editing
+- Organization
 - Recording
-- Project Formatting
+- Workflow
 
 ## Notes
 
