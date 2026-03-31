@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Adrian Klein Scripts" commit="290fc092cb38648d94149e398005702f469f65c9">
+<index version="1" name="Adrian Klein Scripts" commit="92fa14a4d029a545470228cb4b3411377d6eb452">
   <category name="Automation">
     <reapack name="klein_toggle selected track envelopes in lanes.lua" type="script" desc="Toggle Selected Track Envelopes in Lanes">
       <metadata>
@@ -201,6 +201,20 @@
         <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/e90e31493866564d8bfd38795d05197fb40070e9/Organization/klein_rename%20selected%20items%20by%20track%20name.lua</source>
       </version>
     </reapack>
+    <reapack name="klein_rename selected tracks with incremental numbers.lua" type="script" desc="Rename Selected Tracks with Incremental Numbers">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Renames selected tracks sequentially using a user-defined base name. Skips numbering when only one track is selected.\par}
+}
+]]></description>
+      </metadata>
+      <version name="2.2" author="Adrian Klein" time="2026-03-31T11:43:47Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/92fa14a4d029a545470228cb4b3411377d6eb452/Organization/klein_rename%20selected%20tracks%20with%20incremental%20numbers.lua</source>
+      </version>
+    </reapack>
   </category>
   <category name="Recording">
     <reapack name="klein_toggle record arm and monitoring for instrument tracks.lua" type="script" desc="Toggle Record Arm and Monitoring for Instrument Tracks">
@@ -215,6 +229,36 @@
       </metadata>
       <version name="1.1" author="Adrian Klein" time="2026-03-30T15:15:43Z">
         <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/e90e31493866564d8bfd38795d05197fb40070e9/Recording/klein_toggle%20record%20arm%20and%20monitoring%20for%20instrument%20tracks.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Sound Design">
+    <reapack name="klein_progressive item spacing.lua" type="script" desc="Progressive Item Spacing">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Interactive tool for spacing items with progressive curves. Supports linear, exponential, and logarithmic spacing.\par}
+}
+]]></description>
+      </metadata>
+      <version name="5.7" author="Adrian Klein" time="2026-03-31T11:43:47Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/92fa14a4d029a545470228cb4b3411377d6eb452/Sound%20Design/klein_progressive%20item%20spacing.lua</source>
+      </version>
+    </reapack>
+    <reapack name="klein_progressive shrink duplicates.lua" type="script" desc="Progressive Shrink Duplicates">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Creates progressively shorter duplicates of selected items. Supports directional control, spacing, and live preview.\par}
+}
+]]></description>
+      </metadata>
+      <version name="2.6" author="Adrian Klein" time="2026-03-31T11:43:47Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/92fa14a4d029a545470228cb4b3411377d6eb452/Sound%20Design/klein_progressive%20shrink%20duplicates.lua</source>
       </version>
     </reapack>
   </category>
@@ -279,6 +323,7 @@
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Editing\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Organization\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Recording\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Sound Design\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Workflow\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Notes\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 These scripts are built from real-world use and will continue to evolve over time.\par}
