@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Adrian Klein Scripts" commit="e90e31493866564d8bfd38795d05197fb40070e9">
+<index version="1" name="Adrian Klein Scripts" commit="290fc092cb38648d94149e398005702f469f65c9">
   <category name="Automation">
     <reapack name="klein_toggle selected track envelopes in lanes.lua" type="script" desc="Toggle Selected Track Envelopes in Lanes">
       <metadata>
@@ -131,6 +131,62 @@
     </reapack>
   </category>
   <category name="Organization">
+    <reapack name="klein_append incremented numbers to selected tracks.lua" type="script" desc="Append Incremented Numbers to Selected Tracks">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Appends sequential numbers to the end of selected track names.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Adrian Klein" time="2026-03-31T04:01:34Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/290fc092cb38648d94149e398005702f469f65c9/Organization/klein_append%20incremented%20numbers%20to%20selected%20tracks.lua</source>
+      </version>
+    </reapack>
+    <reapack name="klein_format parent and child track names.lua" type="script" desc="Format Parent and Child Track Names">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Capitalizes parent track names and converts child track names to lowercase.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Adrian Klein" time="2026-03-31T04:01:34Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/290fc092cb38648d94149e398005702f469f65c9/Organization/klein_format%20parent%20and%20child%20track%20names.lua</source>
+      </version>
+    </reapack>
+    <reapack name="klein_format selected parent and child track names.lua" type="script" desc="Format Selected Parent and Child Track Names">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Capitalizes selected parent track names and converts selected child track names to lowercase.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Adrian Klein" time="2026-03-31T04:01:34Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/290fc092cb38648d94149e398005702f469f65c9/Organization/klein_format%20selected%20parent%20and%20child%20track%20names.lua</source>
+      </version>
+    </reapack>
+    <reapack name="klein_format selected tracks to uppercase.lua" type="script" desc="Format Selected Tracks to Uppercase">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Converts selected track names to uppercase.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Adrian Klein" time="2026-03-31T04:01:34Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/290fc092cb38648d94149e398005702f469f65c9/Organization/klein_format%20selected%20tracks%20to%20uppercase.lua</source>
+      </version>
+    </reapack>
     <reapack name="klein_rename selected items by track name.lua" type="script" desc="Rename Selected Items by Track Name">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
