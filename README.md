@@ -18,6 +18,7 @@ Then import this URL:
 - Editing
 - Organization
 - Recording
+- Sound Design
 - Workflow
 
 ## Notes
