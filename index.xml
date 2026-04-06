@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Adrian Klein Scripts" commit="92fa14a4d029a545470228cb4b3411377d6eb452">
+<index version="1" name="Adrian Klein Scripts" commit="058406f87e88aa0f5d1cde435628382d40f2cc8b">
   <category name="Automation">
     <reapack name="klein_toggle selected track envelopes in lanes.lua" type="script" desc="Toggle Selected Track Envelopes in Lanes">
       <metadata>
@@ -233,6 +233,20 @@
     </reapack>
   </category>
   <category name="Sound Design">
+    <reapack name="klein_create sampler for selected items.lua" type="script" desc="Create Sampler for Selected Items">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Creates a sampler track with ReaSamplOmatic5000 from selected items. Sets up track, routing, and monitoring for immediate use.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.7" author="Adrian Klein" time="2026-04-06T03:00:16Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/058406f87e88aa0f5d1cde435628382d40f2cc8b/Sound%20Design/klein_create%20sampler%20for%20selected%20items.lua</source>
+      </version>
+    </reapack>
     <reapack name="klein_progressive item spacing.lua" type="script" desc="Progressive Item Spacing">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
