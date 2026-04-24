@@ -1,5 +1,5 @@
 -- @description Rename Selected Tracks with Incremental Numbers
--- @version 2.2
+-- @version 2.3
 -- @author Adrian Klein
 -- @about
 --   Renames selected tracks sequentially using a user-defined base name.
@@ -51,6 +51,15 @@ local function Main()
   local base_name = ""
   local WIN_W     = 300
   local focus_set = false
+  local should_close = false
+
+  local function apply_rename()
+    local trimmed = base_name:match("^%s*(.-)%s*$")
+    if trimmed == "" then return end
+
+    RenameSelectedTracks(trimmed)
+    should_close = true
+  end
 
   local function loop()
     -- ---- Style (identical to the AK script family) ----
@@ -97,16 +106,10 @@ local function Main()
         reaper.ImGui_SetKeyboardFocusHere(ctx)
         focus_set = true
       end
-      local enter_pressed, new_val = reaper.ImGui_InputText(ctx, "##basename", base_name,
-        reaper.ImGui_InputTextFlags_EnterReturnsTrue())
-      -- Always update base_name so preview stays live while typing
+      local _, new_val = reaper.ImGui_InputText(ctx, "##basename", base_name, 0)
       if new_val ~= base_name then base_name = new_val end
-      if enter_pressed then
-        local t = base_name:match("^%s*(.-)%s*$")
-        if t ~= "" then
-          RenameSelectedTracks(t)
-          open = false
-        end
+      if reaper.ImGui_IsItemFocused(ctx) and reaper.ImGui_IsKeyPressed(ctx, reaper.ImGui_Key_Enter()) then
+        apply_rename()
       end
 
       local sel_count = reaper.CountSelectedTracks(0)
@@ -134,12 +137,11 @@ local function Main()
       local btn_w     = 80
       reaper.ImGui_SetCursorPosX(ctx, 18 + avail_w - btn_w)
       if trimmed == "" then reaper.ImGui_BeginDisabled(ctx) end
-      local do_rename = reaper.ImGui_Button(ctx, "Rename##rename", btn_w, 0)
+      local do_rename = reaper.ImGui_Button(ctx, "Rename##rename", btn_w, 24)
       if trimmed == "" then reaper.ImGui_EndDisabled(ctx) end
 
       if do_rename then
-        RenameSelectedTracks(trimmed)
-        open = false
+        apply_rename()
       end
 
       reaper.ImGui_Spacing(ctx)
@@ -150,7 +152,7 @@ local function Main()
     reaper.ImGui_PopStyleVar(ctx, 5)
     reaper.ImGui_PopStyleColor(ctx, 11)
 
-    if open then
+    if open and not should_close then
       reaper.defer(loop)
     end
   end
