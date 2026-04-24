@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Adrian Klein Scripts" commit="79ff74fc1703080b0916e1fd05c2e5654a6a15a9">
+<index version="1" name="Adrian Klein Scripts" commit="3b9b1bb6fbe9cade5038def5d695cdfe8e202dc8">
   <category name="Adrian Klein/Automation">
     <reapack name="klein_toggle selected track envelopes in lanes.lua" type="script" desc="Toggle Selected Track Envelopes in Lanes">
       <metadata>
@@ -227,6 +227,9 @@
       </metadata>
       <version name="2.2" author="Adrian Klein" time="2026-04-19T12:26:02Z">
         <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/79ff74fc1703080b0916e1fd05c2e5654a6a15a9/Adrian%20Klein/Organization/klein_rename%20selected%20tracks%20with%20incremental%20numbers.lua</source>
+      </version>
+      <version name="2.3" author="Adrian Klein" time="2026-04-24T06:29:10Z">
+        <source main="main">https://github.com/kleinadrian/reaper-scripts-reapack/raw/3b9b1bb6fbe9cade5038def5d695cdfe8e202dc8/Adrian%20Klein/Organization/klein_rename%20selected%20tracks%20with%20incremental%20numbers.lua</source>
       </version>
     </reapack>
   </category>
